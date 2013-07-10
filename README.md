@@ -1,4 +1,0 @@
-znanylekarz.github.io
-=====================
-
-Hello
