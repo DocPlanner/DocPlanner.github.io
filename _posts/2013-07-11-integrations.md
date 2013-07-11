@@ -1,5 +1,5 @@
 ---
-layout: documentup
+layout: default
 title: Facility integrations
 ---
 
