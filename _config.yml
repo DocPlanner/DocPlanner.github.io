@@ -2,9 +2,11 @@ name: DocPlanner Developer Zone
 subtitle: Specyfikacje
 
 baseurl: ''
-permalink: /:title
+permalink: /:categories/:title
 pygments: true
 future: true
+
+languages: [pl, en]
 
 markdown: redcarpet
 redcarpet:
