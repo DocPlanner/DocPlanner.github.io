@@ -22,55 +22,61 @@
 			var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
 		})();
 	</script>
-
 </head>
 <body>
 
 <div id="headbar" class="container-fluid">
     <div class="container">
         <nav class="navbar">
-            <ul class="nav pull-left">
-                <ul class="nav pull-right">
+            <a class="span offset-1" href="/"><img id="logo-headbar" alt="" style="height:20px" src="//platform.docplanner.com/img/pl/logo/logo-medium-white-pl.png"></a>
         </nav>
     </div>
 </div>
 
 <div id="container">
-<div id="nav">
-	<p><img src="//platform.docplanner.com/img/en/logo/logo-medium-blue-en.png" alt="DocPlanner"></p>
-	<div id="header">
-		<a href="/" id="logo">{{ site.subtitle }}</a>
-	</div>
+    <div id="nav">
+        <p><img src="//platform.docplanner.com/img/en/logo/logo-medium-blue-en.png" alt="DocPlanner"></p>
+        <div id="header">
+            <a href="/" id="logo">{{ site.subtitle }}</a>
+        </div>
 
-	<ul id="sections">
-		{% for post in site.posts reversed %}
-		{% if (page.categories[0] == post.categories[0]) or (post.categories contains page.categories[0]) %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
+        <ul id="sections">
+            {% for post in site.posts reversed %}
+            {% if (page.categories[0] == post.categories[0]) or (post.categories contains page.categories[0]) %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
 
-	<div class="extra">
-		{% if page.categories contains "en") %}
-		<a href="/">Czytaj po polsku</a>
-		{% else %}
-		<a href="/en/index">View in English</a>
-		{% endif %}
-	</div>
+        <div class="extra">
+            {% if page.categories contains "en") %}
+            <a href="/">Czytaj po polsku</a>
+            {% else %}
+            <a href="/en/index">View in English</a>
+            {% endif %}
+        </div>
 
-<!--	<div class="extra" id="github">
-		<a href="https://github.com/jeromegn/DocumentUp">Source on Github</a>
-	</div>
+    <!--	<div class="extra" id="github">
+            <a href="https://github.com/jeromegn/DocumentUp">Source on Github</a>
+        </div>
 
-	<div class="extra" id="github-issues">
-		<a href="https://github.com/jeromegn/DocumentUp/issues">Issues</a>
-	</div>
--->
+        <div class="extra" id="github-issues">
+            <a href="https://github.com/jeromegn/DocumentUp/issues">Issues</a>
+        </div>
+    -->
+    </div>
+    <div id="content" class="zl-well-gray">
+     {{ content }}
+    </div>
 </div>
-<div id="content" class="zl-well-gray">
- {{ content }}
+
+<div id="footer" class="container-fluid">
+    <div class="container">
+        <p>ZnanyLekarz.pl © 2013 - Coś nie działa?</p>
+    </div>
 </div>
-</div></body>
+
+</body>
 </html>
