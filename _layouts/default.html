@@ -6,10 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ page.title }} - {{ site.name }}</title>
 
-	<link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="//platform.docplanner.com/css/rebranding.min.css?64b9fc88cc" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
 	<link rel="stylesheet" type="text/css" href="/css/syntax.css">
 
-	<!-- Typekit -->
+    <!-- Typekit -->
 
 	<script type="text/javascript">
 		(function() {
@@ -22,10 +24,20 @@
 	</script>
 
 </head>
-<body><div id="container">
+<body>
+
+<div id="headbar" class="container-fluid">
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav pull-left">
+                <ul class="nav pull-right">
+        </nav>
+    </div>
+</div>
+
+<div id="container">
 <div id="nav">
 	<p><img src="//platform.docplanner.com/img/en/logo/logo-medium-blue-en.png" alt="DocPlanner"></p>
-
 	<div id="header">
 		<a href="/" id="logo">{{ site.subtitle }}</a>
 	</div>
@@ -57,7 +69,7 @@
 	</div>
 -->
 </div>
-<div id="content">
+<div id="content" class="zl-well-gray">
  {{ content }}
 </div>
 </div></body>

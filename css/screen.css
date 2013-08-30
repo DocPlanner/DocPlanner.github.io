@@ -166,7 +166,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  background: #f4f6ec;
+  background: url("//platform.docplanner.com/img/general/homepage/mainpage-bg.png?98b7eb62f2ff68f36481e47799db9439") repeat-x scroll 0 -48px transparent;
 }
 a {
   color: #369;
@@ -239,12 +239,7 @@ a {
   padding: 30px 30px 20px 30px;
   min-height: 100px;
   width: 600px;
-  background: #fff;
   float: left;
-  border: 1px solid rgba(0,0,0,0.20);
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
   margin-top: 15px;
 /* From Tripoli  */
 }
@@ -414,12 +409,10 @@ a {
 #content tt {
   font-size: 1em;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-  line-height: 1.5;
+  line-height: 1.6em;
 }
 #content code {
-  background: #f7f8f1;
   padding: 1px 2px;
-  border: 1px solid #ccc;
 }
 #content pre code {
   padding: 10px 12px;
