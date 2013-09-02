@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/screen.css">
 	<link rel="stylesheet" type="text/css" href="/css/syntax.css">
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <!-- Typekit -->
 
 	<script type="text/javascript">
@@ -20,11 +20,14 @@
 				scriptTimeout: 3000
 			};
 			var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-		})();
-        (function() {
-
         })();
 	</script>
+    <script>
+        $(document).ready(function(){
+            $("code").addClass("zl-well-white");
+            $("h2").css("color", "#6F8187");
+        });
+    </script>
 </head>
 <body>
 
@@ -35,7 +38,7 @@
         </nav>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid page-gradient true">
     <div id="container">
         <div id="nav">
             <p><img src="//platform.docplanner.com/img/en/logo/logo-medium-blue-en.png" alt="DocPlanner"></p>
@@ -80,6 +83,5 @@
         <p>ZnanyLekarz.pl © 2013 - Coś nie działa?</p>
     </div>
 </div>
-
 </body>
 </html>
