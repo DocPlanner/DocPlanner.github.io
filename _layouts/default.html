@@ -81,7 +81,11 @@
 
             <ul id="sections">
                 <li>
-                    <a href="/" id="logo">{{ site.subtitle }}</a>
+                    {% if page.categories contains "en") %}
+                    <a href="/en/index" id="logo">Specification</a>
+                    {% else %}
+                    <a href="/" id="logo">Specyfikacje</a>
+                    {% endif %}
                 </li>
                 {% for post in site.posts reversed %}
                 {% if (page.categories[0] == post.categories[0]) or (post.categories contains page.categories[0]) %}
@@ -94,9 +98,9 @@
 
             <div class="extra">
                 {% if page.categories contains "en") %}
-                <a href="/">Czytaj po polsku</a>
+                <a href="/"></a>
                 {% else %}
-                <a href="/en/index">View in English</a>
+                <a href="/en/index"></a>
                 {% endif %}
             </div>
 
