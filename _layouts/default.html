@@ -25,13 +25,16 @@
     <script>
         $(document).ready(function(){
             $("code").addClass("zl-well-white");
-            $("h2, #sections a").css("color", "#6F8187");
+            $("#sections a").css("color", "#6F8187");
             $("#header a, .extra a").css("color", "#4A5E65");
         });
     </script>
     <style type="text/css">
         body{
             font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #sections li a:hover{
+            text-decoration: underline;
         }
         #footer{
             margin-top: 45px;
@@ -75,11 +78,11 @@
 <div class="container-fluid page-gradient true">
     <div id="container">
         <div id="nav">
-            <div id="header">
-                <a href="/" id="logo">{{ site.subtitle }}</a>
-            </div>
 
             <ul id="sections">
+                <li>
+                    <a href="/" id="logo">{{ site.subtitle }}</a>
+                </li>
                 {% for post in site.posts reversed %}
                 {% if (page.categories[0] == post.categories[0]) or (post.categories contains page.categories[0]) %}
                 <li>
