@@ -12,7 +12,7 @@ Integracja może przebiegać w jednym z dwóch trybów:
  * W przypadku, gdy Klient posiada własne API, ZnanyLekarz podłącza i dostosowuje się do niego
  * W przeciwnym razie, Klient musi skorzystać z API udostępnionego przez ZnanegoLekarza
 
-W tym dokumencje opisana jest druga ścieżka.
+W tym dokumencje opisana jest druga ścieżka. Więcej na temat pierwszej opcji można przeczytać w artykule [Jak przygotować API dla ZnanegoLekarza](/foreign-api)
 
 Ogólny zarys
 ============
