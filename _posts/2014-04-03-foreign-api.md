@@ -86,7 +86,7 @@ Rezerwuje wizytę, podając dane pacjenta. ZnanyLekarz dostarcza następujące d
  * Imię oraz Nazwisko
  * Adres e-mail
  * Zweryfikowany (kodem SMS-owym) numer telefonu
- * PESEL
+ * PESEL (OPCJONALNIE)
 
 Oraz dodatkowo wszelkie dane dotyczące placówki / lekarza / daty w formacie wymaganym przez zewnętrzny system. 
 
