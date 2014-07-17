@@ -25,5 +25,5 @@ Nie są tu przesyłane jakiekolwiek dane pacjentów, ZnanyLekarz nie potrzebuje 
 
 Sandbox
 ----
- - WSDL: http://www.sandbox.znanylekarz.pl/soap/wsdl.xml
- - Token: 78e32ad37a54.42a2d369d686246945ca6f427bf60d7d
+ - WSDL: `http://www.sandbox.znanylekarz.pl/soap/wsdl.xml`
+ - Token: `78e32ad37a54.42a2d369d686246945ca6f427bf60d7d`
