@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Jak przygotować API?
+title: "Jak przygotować API?"
+published: true
 ---
 
 Jak przygotować API dla ZnanegoLekarza?
@@ -39,7 +40,7 @@ Lista placówek / adresów / poradni, etc. Przykładowo:
        "id": "00C55657-F0F8-4C8F-991E-C2FDF197D65D",
        "name": "POL LEK MED",
        "address": "ul. Solidarności 15a, Warsazwa",
-       "specializations": "ortopedia"
+       "specializations": ["ortopedia", "…"]
     }
 
 ### `getPersonnel(uuid workplaceId)`
@@ -50,7 +51,7 @@ Lekarze przyjmujący w danej jednostce:
       {
         "id": "44BE83FB-6374-48AD-B420-C1A39E627A8B",
         "name": "Jan Kowalski",
-        "specialization": "ortopeda"
+        "specializations": ["ortopeda", "…"]
       }
     ]
 
@@ -61,7 +62,8 @@ Harmonogramy wizyt lekarza. Może być to w formie przedziałów czasowych, albo
     [
       {
         "start": "2014-02-21 12:50",
-        "end": "2014-02-21 17:00"
+        "end": "2014-02-21 17:00",
+        "services_ids": ["…", "…"]
       }
     ]
 
@@ -73,6 +75,7 @@ Szczegóły na temat wizyty (interesuje nas czas, miejsce i lekarz):
       "id": "…",
       "personnel": "…",
       "workplace": "…",
+      "services_ids": ["…", "…"],
       "start": "2014-02-25 12:20",
       "end": "2014-02-25 12:50"
     }
@@ -86,7 +89,7 @@ Rezerwuje wizytę, podając dane pacjenta. ZnanyLekarz dostarcza następujące d
  * Imię oraz Nazwisko
  * Adres e-mail
  * Zweryfikowany (kodem SMS-owym) numer telefonu
- * PESEL (OPCJONALNIE)
+ * PESEL (OPCJONALNIE
 
 Oraz dodatkowo wszelkie dane dotyczące placówki / lekarza / daty w formacie wymaganym przez zewnętrzny system. 
 
@@ -95,3 +98,16 @@ Metoda powinna zwracać dane umożliwiające odwołanie się do danej wizyty pó
 ### `cancelVisit(uuid visitId)`
 
 Anulowanie wizyty wcześniej umówionej przez ZnanegoLekarza.
+
+### `getServices()`
+Pobiera listę usług
+
+    {
+      "id": "…",
+      "name": "…",
+      "price": {
+      		"min": …,
+            "max": …
+       },
+       "duration": "…"
+    }
