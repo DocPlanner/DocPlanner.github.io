@@ -88,7 +88,6 @@ Przykładowy kod PHP:
 Kontakt
 =======
 
- * [Maciej Łebkowski](mailto:maciej.lebkowski@docplanner.com)
- * [Piotr Ziewiec](mailto:piotr.ziewiec@docplanner.com)
+ * [Jakub Skoczylas](mailto:jakub.skoczylas@docplanner.com)
 
 [mashape]: https://www.mashape.com/mlebkowski/docplanner
