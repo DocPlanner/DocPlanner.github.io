@@ -1,6 +1,7 @@
 ---
 layout: default
 title: API DocPlanner
+published: true
 ---
 
 API DocPlanner
@@ -49,19 +50,12 @@ Lub, w przypadku błędu:
 
 Gdyby komuś przyszło coś innego do głowy: komunikujemy się wyłącznie w UTF-8.
 
-Metody dostępu
+Dostęp
 ==============
 
-Udostępniamy dwa sposoby dostępu do API:
-
- * Endpoint REST-owy, działa poprzez doklejenie parametru `method` w query, np. `https://www.znanylekarz.pl/api/?method=doctor.categories`
+ Endpoint REST-owy, działa poprzez doklejenie parametru `method` w query, np. `https://www.znanylekarz.pl/api/?method=doctor.categories`
     
    Wszelkie parametry do metody powinny być przekazywane w query lub poprzez POST (`application/x-www-form-urlencoded`).
-   
- * SOAP, pod tym samym adresem, a do którego WSDL znajduje się tu: `https://www.znanylekarz.pl/api/?wsdl`
-   
-   W przypadku SOAP `consumer_key` oraz `consumer_secret` należy uznać za dane do autoryzacji, a `access_token` użytkownika trzeba  podać jako pierwszy parametr wywoływanej metody.
-
 
 Narzędzia
 =========
