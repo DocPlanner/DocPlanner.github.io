@@ -18,11 +18,6 @@ Autoryzacja
 
 API nie jest publiczne i wymaga podania pary `consumer_key` oraz `consumer_secret` do autoryzacji. Autoryzacja odbywa się protokołem *OAuth 1.0a* — więcej informacji na ten temat można przeczytać na [OAuth Bible](http://oauthbible.com/).
 
-Dla testów, można używać danych aplikacji demo, która za każdym razem jedynie wyświetla parametry zapytania:
-
- * `consumer_key`: demo
- * `consumer_secret`: 26e25689f09b44092c5b4485e5761aedf9d7e732
-
 Aby otrzymać produkcyjne dane dostępowe należy [skontaktować się z nami](#kontakt).
 
 
